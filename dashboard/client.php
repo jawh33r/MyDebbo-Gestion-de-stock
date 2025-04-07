@@ -9,6 +9,7 @@ if (!isset($_SESSION['nom']) || $_SESSION['role'] !== 'admin') {
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+<link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <title>Dashboard Client</title>
 </head>

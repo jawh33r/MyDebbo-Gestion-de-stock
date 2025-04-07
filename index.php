@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil - MyDebbo Gestion de Stock</title>
+    <title>MyDebbo | Accueil  </title>
     <style>
         body {
             background: url('img/bg.jpg') no-repeat center center fixed;
@@ -26,6 +27,7 @@
             background: rgba(0, 0, 0, 0.52); 
             border-radius: 20px;
             z-index: 1;
+            border-style: dotted;
         }
         .container {
             position: relative;

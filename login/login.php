@@ -1,8 +1,7 @@
 <?php
-session_start();
-include '../db.php'; 
+    session_start();
+    include '../db.php'; 
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nom = $_POST['nom'];
     $mdp = $_POST['mdp'];
     $role = $_POST['role'];
@@ -22,8 +21,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             header("Location: ../dashboard/fourni.php");
         }
         exit();
-    } else {
-        echo "Nom  ou mot de passe incorrect.";
+    } else {// js car les eruer de php pour redirect 
+        echo "<script>
+        alert('| 📦 MyDebbo | \\n Nom ou mot de passe incorrect pour " . strtoupper($role) . "🚨');
+        window.location.href = '../login/" . $role . "login.php';
+        </script>";
+        exit();
     }
-}
+
 ?>
